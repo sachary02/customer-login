@@ -6,7 +6,7 @@ import Login from "./LoginComponent"
 
 describe('Login Form', () => {
     test('should have 3 text input fields with texts Name, email and password', () => {
-        render(<Login/>)
+        render(<App/>)
 
         const renderInputFields = screen.getAllByRole('textbox')
         const renderNameText = screen.getByPlaceholderText('Enter Name')
