@@ -10,7 +10,6 @@ const Login = () =>{
       <p><input  placeholder="Password *"/></p>
       <p><button type="submit">Create account</button></p>
       <p><button type="submit">Log In</button></p>
-
     </div>
     </form>
 
