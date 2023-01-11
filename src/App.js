@@ -1,10 +1,11 @@
 import "./App.css";
+import Login from "./components/customerLogin/loginComponent";
 
 
 
 function App() {
   return (
-    <p></p>
+    <Login/>
   );
 }
 
