@@ -1,11 +1,12 @@
 import { render, screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
+import App from "../../App"
 import Login from "./LoginComponent"
 
 
 describe('Login Form', () => {
     test('should have 3 text input fields with texts Name, email and password', () => {
-        render(<Login/>)
+        render(<App/>)
 
         const renderInputFields = screen.getAllByRole('textbox')
         const renderNameText = screen.getByPlaceholderText('Enter Name')
@@ -21,7 +22,7 @@ describe('Login Form', () => {
     })
 
     test("should have 2 buttons with texts Create Account and Login", ()=>{
-        render(<Login/>)
+        render(<App/>)
 
         const renderedButtons = screen.getAllByRole('button')
         const accountText = screen.getByText('Create Account')
